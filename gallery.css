@@ -1,0 +1,108 @@
+/* index1.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c2c31;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #0b0b0b;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(237, 227, 227);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(247, 234, 234);
+}
+
+/* Gallery section styles */
+.gallery {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.gallery .heading {
+    font-size: 3em;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.gallery .heading span {
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery .heading span:hover {
+    transform: translateY(-10px);
+}
+
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.gallery .box {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #477ada;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery .box:hover {
+    transform: translateY(-10px);
+}
+
+.gallery .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery .box .content {
+    margin-top: 15px;
+}
+
+.gallery .box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.gallery .box p {
+    font-size: 1.1em;
+    color: #ede4e4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery .box {
+        width: calc(100% - 40px);
+    }
+}

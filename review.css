@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Navigation styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c2c31;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #dbd9e4;
+    color: black;
+}
+
+/* Review section styles */
+.review {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.review .heading {
+    font-size: 3em;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.review .heading span {
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.review .heading span:hover {
+    transform: translateY(-10px);
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.review .box {
+    background-color: #767db0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.review .box img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.review .box h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.review .box p {
+    font-size: 1.1em;
+    color: #121111;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .review .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
